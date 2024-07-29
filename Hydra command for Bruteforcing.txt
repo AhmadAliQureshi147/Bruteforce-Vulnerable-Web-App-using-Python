@@ -1,0 +1,1 @@
+ hydra -t 4 -C wordlists.txt 127.0.0.1 http-post-form "/:username=^USER^&password=^PASS^:Invalid credentials" -s 5000 -V
